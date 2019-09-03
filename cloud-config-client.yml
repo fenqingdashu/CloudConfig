@@ -10,12 +10,12 @@ server:
 spring:
   profiles: dev
   application:
-    name: cloud-config-client
+    name:  cloud-config-client
   
 eureka:
   client:
     service-url:
-      defalutZone: http://eureka-dev.com:7001/eureka/
+      defaultZone: http://eureka-dev.com:7001/eureka/
 
 ---
 server:
@@ -23,9 +23,9 @@ server:
 spring:
   profiles: test
   application:
-    name: cloud-config-client
+    name:  cloud-config-client
     
 eureka:
   client:
     service-url:
-      defalutZone: http://eureka-test.com:7001/eureka/
+      defaultZone: http://eureka-test.com:7001/eureka/
